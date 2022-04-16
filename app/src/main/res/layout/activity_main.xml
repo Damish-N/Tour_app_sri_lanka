@@ -1,0 +1,291 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/back_bg"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="15dp"
+            tools:context=".MainActivity">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:layout_marginTop="20dp">
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="391dp"
+                    android:layout_height="wrap_content"
+                    android:text="Hi travler ! Welcome to Sri Lanka 🇱🇰"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:padding="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.51" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="36dp"
+                android:padding="15dp"
+                android:textColor="#000"
+                android:text="Explore" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:text="Search Destination"
+                    android:textSize="14sp"
+                    android:paddingLeft="30dp"
+                    android:background="@drawable/search_bg"
+                    android:paddingStart="30dp"
+                    tools:ignore="RtlSymmetry" />
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="55dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/ellpise" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="88dp"
+                    android:background="@drawable/card_1"
+                    android:layout_gravity="center" />
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="88dp"
+                    android:background="@drawable/card_2"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12dp"/>
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="88dp"
+                    android:background="@drawable/card_3"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12dp"/>
+
+                <ImageView
+                    android:clickable="true"
+                    android:id="@+id/imageView4"
+                    android:layout_width="70dp"
+                    android:layout_height="88dp"
+                    android:background="@drawable/card_4"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12dp"
+                    android:focusable="true" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Popular"
+                android:textSize="25dp"
+                android:padding="15dp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_marginTop="30dp"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/back_bg"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="15dp"
+            tools:context=".MainActivity">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:backgroundTint="@color/black">
+                <LinearLayout
+                    android:padding="10dp"
+                    android:backgroundTint="#EAE7E7"
+                    android:background="@drawable/round_corners"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/splash_screen_image"
+                        android:contentDescription="TODO" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:textSize="15dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="Sinharaja Forest Reserve" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:textSize="12dp"
+                            android:textColor="@color/black"
+                            android:textStyle="italic"
+                            android:text="Protected lowland rainforest habitat" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:backgroundTint="@color/black">
+                <LinearLayout
+                    android:padding="10dp"
+                    android:backgroundTint="#D8D3D3"
+                    android:background="@drawable/round_corners"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/hortant_place"
+                        android:contentDescription="TODO" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:textSize="15dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="Horton Plains National Park" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:textSize="12dp"
+                            android:textColor="@color/black"
+                            android:textStyle="italic"
+                            android:text="Lush nature preserve on a plateau" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:backgroundTint="@color/black">
+                <LinearLayout
+                    android:padding="10dp"
+                    android:backgroundTint="#D8D3D3"
+                    android:background="@drawable/round_corners"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/fort"
+                        android:contentDescription="TODO" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:textSize="15dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="Galle Dutch Fort" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:textSize="12dp"
+                            android:textColor="@color/black"
+                            android:textStyle="italic"
+                            android:text="Historic fortress with shops and a museum" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
