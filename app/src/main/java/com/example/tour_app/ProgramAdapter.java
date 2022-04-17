@@ -48,8 +48,8 @@ public class ProgramAdapter extends ArrayAdapter<String> {
         singleItem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(),"You clicked"+ names[position],
-                        Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getContext(),"You clicked"+ names[position],
+//                        Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getContext(), DescriptionActivity.class);
                 intent.putExtra("name",names[position]);
                 intent.putExtra("tag",tagLine[position]);

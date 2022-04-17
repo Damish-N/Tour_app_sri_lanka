@@ -9,7 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Tour_app">
-        <activity android:name=".DescriptionActivity"></activity>
+        <activity android:name=".PopularListDescription"></activity>
+        <activity
+            android:name=".Forests"
+            android:label="Forests" />
+        <activity
+            android:name=".Beaches"
+            android:label="Beaches" />
+        <activity
+            android:name=".Arts"
+            android:label="Arts works" />
+        <activity android:name=".DescriptionActivity" />
         <activity
             android:name=".Hills"
             android:label="Hills">

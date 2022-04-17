@@ -140,8 +140,10 @@
             android:layout_marginHorizontal="15dp"
             tools:context=".MainActivity">
 
-
             <RelativeLayout
+                android:id="@+id/sinharaja"
+                android:clickable="true"
+                android:focusable="true"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
@@ -189,6 +191,9 @@
 
             </RelativeLayout>
             <RelativeLayout
+                android:id="@+id/hortantPlace"
+                android:clickable="true"
+                android:focusable="true"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
@@ -236,6 +241,9 @@
 
             </RelativeLayout>
             <RelativeLayout
+                android:id="@+id/fort"
+                android:clickable="true"
+                android:focusable="true"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"

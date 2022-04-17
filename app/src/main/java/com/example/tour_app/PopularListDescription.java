@@ -11,15 +11,16 @@ import android.widget.TextView;
 
 import java.util.Objects;
 
-public class DescriptionActivity extends AppCompatActivity {
+public class PopularListDescription extends AppCompatActivity {
 
-    TextView textViewOnHeaderText,textViewOnTag,textViewOnDescription;
+    TextView textViewOnHeaderText, textViewOnTag, textViewOnDescription;
     ImageView imageViewOnDescriptionView;
     final Activity activity = this;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_description);
+        setContentView(R.layout.activity_popular_list_description);
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
         textViewOnHeaderText = findViewById(R.id.cardHeaderTextInDescriptionPage);
@@ -30,15 +31,15 @@ public class DescriptionActivity extends AppCompatActivity {
         textViewOnHeaderText.setText(intent.getStringExtra("name"));
         textViewOnTag.setText(intent.getStringExtra("tag"));
         textViewOnDescription.setText(intent.getStringExtra("description"));
-        imageViewOnDescriptionView.setImageResource(intent.getIntExtra("image",R.id.imageView1));
+        imageViewOnDescriptionView.setImageResource(intent.getIntExtra("image", R.id.imageView1));
         activity.setTitle(intent.getStringExtra("name"));
 
 
     }
 
     public boolean onOptionsItemSelected(MenuItem item) {
-        finish();
-        super.onBackPressed();
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
         return true;
     }
 }
