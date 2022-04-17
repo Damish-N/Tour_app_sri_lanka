@@ -9,7 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Tour_app">
-        <activity android:name=".Hills"></activity>
+        <activity android:name=".DescriptionActivity"></activity>
+        <activity
+            android:name=".Hills"
+            android:label="Hills">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
         <activity android:name=".StartScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,7 +26,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:label="MainActivity"></activity>
+            android:label="MainActivity" />
     </application>
 
 </manifest>

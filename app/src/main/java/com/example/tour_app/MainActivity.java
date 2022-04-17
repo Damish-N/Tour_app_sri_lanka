@@ -11,15 +11,27 @@ import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageView imageView;
+    ImageView imageViewHills,imageViewArts,imageViewSea,imageViewNature;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         Objects.requireNonNull(getSupportActionBar()).hide();
-        imageView = findViewById(R.id.imageView4);
-        imageView.setOnClickListener(v -> System.out.println("Hello"));
+        imageViewHills = findViewById(R.id.imageView1);
+        imageViewArts = findViewById(R.id.imageView2);
+        imageViewSea = findViewById(R.id.imageView3);
+        imageViewNature = findViewById(R.id.imageView4);
+
+        //route to the hills
+        imageViewHills.setOnClickListener(v ->{
+            Intent intent = new Intent(MainActivity.this, Hills.class);
+            startActivity(intent);
+            finish();
+        });
+
 
     }
 

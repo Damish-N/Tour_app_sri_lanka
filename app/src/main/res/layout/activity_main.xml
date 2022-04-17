@@ -86,12 +86,14 @@
                 android:layout_marginTop="30dp">
 
                 <ImageView
+                    android:id="@+id/imageView1"
                     android:layout_width="70dp"
                     android:layout_height="88dp"
                     android:background="@drawable/card_1"
                     android:layout_gravity="center" />
 
                 <ImageView
+                    android:id="@+id/imageView2"
                     android:layout_width="70dp"
                     android:layout_height="88dp"
                     android:background="@drawable/card_2"
@@ -99,6 +101,7 @@
                     android:layout_marginLeft="12dp"/>
 
                 <ImageView
+                    android:id="@+id/imageView3"
                     android:layout_width="70dp"
                     android:layout_height="88dp"
                     android:background="@drawable/card_3"

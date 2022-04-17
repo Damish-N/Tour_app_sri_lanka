@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    tools:context=".DescriptionActivity">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            >
+
+            <ImageView
+                android:id="@+id/imageOnDescriptionPage"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_gravity="center_horizontal"
+                android:adjustViewBounds="true"
+                android:background="@drawable/round_corners"
+                android:backgroundTint="#A6A2B3B1"
+                android:src="@drawable/splash_screen_image" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_corners"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/cardHeaderTextInDescriptionPage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Sinharaja Forest Reserve"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tagLineInDescriptionPage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="Protected lowland rainforest habitat"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_corners"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Description"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/cardInfoTextInDescriptionPage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="The most famous physical feature of Ceylon is Adam’s Peak, which is situated in the Ratnapura district. It is on the edge of the central massif but its surrounding group of mountains called the Wilderness of the Peak is so extensive in comparison to the bulk of the other mountain groups that it appears to form a nucleus of its own, separate from the others. It is about 7500 ft high and, though it is the second-highest peak in the land, its position in relation to the topography is so dominant that it stands out above all others.
+The most famous physical feature of Ceylon is Adam’s Peak, which is situated in the Ratnapura district. It is on the edge of the central massif but its surrounding group of mountains called the Wilderness of the Peak is so extensive in comparison to the bulk of the other mountain groups that it appears to form a nucleus of its own, separate from the others. It is about 7500 ft high and, though it is the second-highest peak in the land, its position in relation to the topography is so dominant that it stands out above all others."
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="4dp"
+                    android:padding="6dp"
+                    android:backgroundTint="#85215313"
+                    android:layout_height="wrap_content"
+                    android:text="Visited ✔️" />
+
+                <Button
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:padding="6dp"
+                    android:backgroundTint="#66F3A70D"
+                    android:textColor="@color/black"
+                    android:text="Wish to visit ❤️" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+
