@@ -25,6 +25,7 @@ public class Arts extends AppCompatActivity {
                         "These skillfully made traditional handicrafts are a very popular choice"};
     int [] images ={R.drawable.art1,R.drawable.art2,R.drawable.art3};
 
+    String [] locations ={"63R2+G74, Main St, Ambalangoda","No.825, Sri Jayawardenepura Kotte","Ape Gama Parliament Rd, Sri Jayawardenepura Kotte, 10120"};
 
 
     @Override
@@ -34,7 +35,7 @@ public class Arts extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_arts);
         lisViewArts = findViewById(R.id.artList);
-        ProgramAdapter programAdpter = new ProgramAdapter(this,artsPlaces,description,images,tageLine);
+        ProgramAdapter programAdpter = new ProgramAdapter(this,artsPlaces,description,images,tageLine,locations);
         lisViewArts.setAdapter(programAdpter);
     }
 

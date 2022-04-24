@@ -17,7 +17,8 @@ public class ProgramAdapter extends ArrayAdapter<String> {
     String[] names;
     String[] descriptions;
     String [] tagLine;
-    public ProgramAdapter(Context context, String[] names, String[] descriptions, int[] images, String[] tageLine) {
+    String [] location;
+    public ProgramAdapter(Context context, String[] names, String[] descriptions, int[] images, String[] tageLine,String[] location) {
         super(context,R.layout.single_card_list,R.id.cardHeaderText,names);
 //        super(context,R.layout.single_card_list,R.id.cardHeaderText, names,descriptions,images);
         this.context = context;
@@ -25,6 +26,7 @@ public class ProgramAdapter extends ArrayAdapter<String> {
         this.descriptions =descriptions;
         this.names =names;
         this.tagLine = tageLine;
+        this.location = location;
     }
 
     @Override
@@ -55,6 +57,7 @@ public class ProgramAdapter extends ArrayAdapter<String> {
                 intent.putExtra("tag",tagLine[position]);
                 intent.putExtra("image",images[position]);
                 intent.putExtra("description",descriptions[position]);
+                intent.putExtra("location",location[position]);
                 context.startActivity(intent);
             }
         });
