@@ -48,6 +48,10 @@ public class Beaches extends AppCompatActivity {
     };
     int [] images ={R.drawable.beaches1,R.drawable.beaches2,R.drawable.beaches3,R.drawable.beaches4
     ,R.drawable.beaches5,R.drawable.beaches6,R.drawable.beaches7,R.drawable.beaches8};
+    String [] locations ={"Nilaveli Beach","Kalkudah Beach, Kalkudah","Arugam Bay Beach",
+            "Mirissa Beach, Mirissa","Unawatuna Beach, Unawatuna","Uppuveli Beach, Uppuveli",
+            "Negombo Beach, Negombo","Tangalle Beach, Tangalle"};
+
 
 
     @Override
@@ -56,7 +60,7 @@ public class Beaches extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_beaches);
         beachesList = findViewById(R.id.beachesList);
-        ProgramAdapter programAdapter = new ProgramAdapter(this,beachesNames,description,images,tageLine);
+        ProgramAdapter programAdapter = new ProgramAdapter(this,beachesNames,description,images,tageLine,locations);
         beachesList.setAdapter(programAdapter);
 
     }

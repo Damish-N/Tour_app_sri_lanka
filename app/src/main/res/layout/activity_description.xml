@@ -120,6 +120,21 @@ The most famous physical feature of Ceylon is Adam’s Peak, which is situated i
                     android:textColor="@color/black"
                     android:text="Wish to visit ❤️" />
             </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+                <Button
+                    android:id="@+id/mapView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#1E1E1E"
+                    android:layout_marginHorizontal="50dp"
+                    android:text="Show in Location">
+
+                </Button>
+            </LinearLayout>
         </LinearLayout>
 
     </LinearLayout>

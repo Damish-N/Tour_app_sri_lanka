@@ -31,6 +31,9 @@ public class Hills extends AppCompatActivity {
 
     int[] hillImages =  {R.drawable.hill1,R.drawable.hill2,R.drawable.hill3,R.drawable.hill4,R.drawable.hill5};
 
+    String [] locations ={"Sri Pada / Adam's Peak","Knuckles","Hanthana Hiking Road","Pidurutalagala Mountain","Ritigala"};
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +42,7 @@ public class Hills extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hills);
         listViewHill = findViewById(R.id.hillList);
-        ProgramAdapter programAdpter = new ProgramAdapter(this,hillNames,description,hillImages,tageLine);
+        ProgramAdapter programAdpter = new ProgramAdapter(this,hillNames,description,hillImages,tageLine,locations);
         listViewHill.setAdapter(programAdpter);
     }
 

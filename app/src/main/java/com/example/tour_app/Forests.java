@@ -37,6 +37,9 @@ public class Forests extends AppCompatActivity {
     };
     int[] images = {R.drawable.forestes1, R.drawable.forests4, R.drawable.forestes3,
     R.drawable.foresets2};
+    String location[]= {"Sinharaja Forest Reserve, Deniyaya","Pitawala Pathana, Riverston","Makandawa Conservation Center (Makandawa Forest), Kitulgala",
+            "5CM8+5J3 Kanneliya-Dediyagala-Nakiyadeniya, Pitabeddara"};
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +49,7 @@ public class Forests extends AppCompatActivity {
         setContentView(R.layout.activity_forests);
 
         forestList = findViewById(R.id.forestList);
-        ProgramAdapter programAdapter = new ProgramAdapter(this,forestPlaces,description,images,tageLine);
+        ProgramAdapter programAdapter = new ProgramAdapter(this,forestPlaces,description,images,tageLine,location);
         forestList.setAdapter(programAdapter);
     }
 
